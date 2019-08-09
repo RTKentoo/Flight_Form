@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import FormContainer from './FormContainer'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Seperator from './components/Seperator/Seperator'
+import './components/FormComponent/FormComponent.css'
+import './components/Header/Header.css'
+import './components/Footer/Footer.css'
+import './components/Seperator/Seperator.css'
+import './FormContainer.css'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+		return(
+			<div>
+				<Header />
+				<Seperator />
+				<FormContainer />
+				<Footer />
+			</div>
+		)
+
 }
 
-export default App;
+
+export default App
